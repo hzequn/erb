@@ -1,0 +1,2157 @@
+[ 2016-03-08T13:12:39+08:00 ] 127.0.0.1 /ERP/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.085004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+
+[ 2016-03-08T13:12:40+08:00 ] 127.0.0.1 /ERP/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\LoginController.class.php on line 15 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.158009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.159009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013000s ]
+
+[ 2016-03-08T13:12:41+08:00 ] 127.0.0.1 /ERP/index.php/Home/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T13:13:09+08:00 ] 127.0.0.1 /ERP/index.php/Home/Login/checkData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `user` WHERE `account` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0200s ]
+
+[ 2016-03-08T13:13:09+08:00 ] 127.0.0.1 /ERP/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T13:13:09+08:00 ] 127.0.0.1 /ERP/index.php/Home/Login/verify.html?id0.08236953856218521
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T13:13:10+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0350s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 1   [ RunTime:0.0390s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 2   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 8 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T13:13:11+08:00 ] 127.0.0.1 /ERP/Home/Index/systeminfo?_=1457413990669
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 11 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T13:30:08+08:00 ] 127.0.0.1 /ERP/Home/Stock/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 14 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T13:30:08+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/stock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock` LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stock` LIMIT 1   [ RunTime:0.0210s ]
+
+[ 2016-03-08T13:30:10+08:00 ] 127.0.0.1 /ERP/Home/Stock/clothes?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 21 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.225013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.226013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T13:30:10+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothes/stockId/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothes`  JOIN stock_clothes b on b.stock_id = 1 and b.clothes_id = clothes.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id,clothes.type,clothes.total,clothes.remark FROM `clothes`  JOIN stock_clothes b on b.stock_id = 1 and b.clothes_id = clothes.id  LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2016-03-08T13:30:11+08:00 ] 127.0.0.1 /ERP/Home/Stock/detail?id=51
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes` WHERE `id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 30 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T13:30:12+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/51.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.1080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0380s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T13:30:14+08:00 ] 127.0.0.1 /ERP/Home/Stock/clothes?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 21 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T13:30:15+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothes/stockId/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothes`  JOIN stock_clothes b on b.stock_id = 2 and b.clothes_id = clothes.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id,clothes.type,clothes.total,clothes.remark FROM `clothes`  JOIN stock_clothes b on b.stock_id = 2 and b.clothes_id = clothes.id  LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2016-03-08T13:30:19+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 14 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T13:30:19+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/stock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stock` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-08T13:30:34+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 25 ORDER BY id desc  LIMIT 1   [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `img` WHERE `id` = 4  [ RunTime:0.0010s ]
+
+[ 2016-03-08T13:30:35+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 26 ORDER BY id desc  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 6  [ RunTime:0.0010s ]
+
+[ 2016-03-08T13:30:36+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 26 ORDER BY id desc  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 6  [ RunTime:0.0010s ]
+
+[ 2016-03-08T13:30:36+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 27 ORDER BY id desc  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 5  [ RunTime:0.0010s ]
+
+[ 2016-03-08T13:30:38+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 28 ORDER BY id desc  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 11  [ RunTime:0.0000s ]
+
+[ 2016-03-08T13:30:38+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 29 ORDER BY id desc  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 7  [ RunTime:0.0000s ]
+
+[ 2016-03-08T13:30:39+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 23 ORDER BY id desc  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 9  [ RunTime:0.0000s ]
+
+[ 2016-03-08T13:30:41+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 24 ORDER BY id desc  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 3  [ RunTime:0.0010s ]
+
+[ 2016-03-08T13:30:42+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 25 ORDER BY id desc  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 4  [ RunTime:0.0000s ]
+
+[ 2016-03-08T13:30:43+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 24 ORDER BY id desc  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 3  [ RunTime:0.0000s ]
+
+[ 2016-03-08T13:30:45+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 26 ORDER BY id desc  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 6  [ RunTime:0.0010s ]
+
+[ 2016-03-08T13:30:45+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 27 ORDER BY id desc  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 5  [ RunTime:0.0000s ]
+
+[ 2016-03-08T13:30:46+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 28 ORDER BY id desc  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 11  [ RunTime:0.0000s ]
+
+[ 2016-03-08T13:30:46+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 29 ORDER BY id desc  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 7  [ RunTime:0.0010s ]
+
+[ 2016-03-08T13:49:34+08:00 ] 127.0.0.1 /ERP/Home/Stock/detail?id=51
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes` WHERE `id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 30 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T13:49:35+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/51.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2016-03-08T13:49:36+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 29 ORDER BY id desc  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 7  [ RunTime:0.0010s ]
+
+[ 2016-03-08T13:49:40+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\www\ERP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0000s ]
+SQL: INSERT INTO `img` (`root_path`,`save_path`,`name`,`type`,`size`,`uploader`,`upload_date`) VALUES ('/ERP/Public/Upload/detail_img/','2016-03-08/','56de67f42cfb8.jpg','jpg','620888','邱岳希','2016-03-08 13:49:40') [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: INSERT INTO `detail_img` (`img_id`,`detail_id`) VALUES ('12','29') [ RunTime:0.0010s ]
+
+[ 2016-03-08T13:49:41+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 29 ORDER BY id desc  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `img` WHERE `id` = 12  [ RunTime:0.0010s ]
+
+[ 2016-03-08T14:00:56+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T14:01:06+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T14:01:10+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T14:02:19+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-08T14:02:47+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T14:03:15+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0020s ]
+SQL: INSERT INTO `clothesdetail` (`name`,`code`,`size`,`price`,`total`,`remark`) VALUES ('2','2','2','2','-100','') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0010s ]
+SQL: INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES ('30','51') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 30 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0020s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`clothes`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `clothes` SET `total`=total-100 WHERE `id` = 51
+NOTIC: [2] fopen(/ERP/Public/Log/error_log2016-03-08): failed to open stream: No such file or directory E:\wamp\www\ERP\Index\Home\Common\function.php 第 157 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 159 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 160 行.
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`stock`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `stock` SET `total`=total-100 WHERE `id` = 1
+NOTIC: [2] fopen(/ERP/Public/Log/error_log2016-03-08): failed to open stream: No such file or directory E:\wamp\www\ERP\Index\Home\Common\function.php 第 157 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 159 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 160 行.
+
+[ 2016-03-08T14:03:48+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0050s ]
+SQL: INSERT INTO `clothesdetail` (`name`,`code`,`size`,`price`,`total`,`remark`) VALUES ('2','2','2','2','-100','') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0050s ]
+SQL: INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES ('31','51') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 31 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0020s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`clothes`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `clothes` SET `total`=total-100 WHERE `id` = 51
+NOTIC: [2] fopen(/ERP/Public/Log/error_log2016-03-08): failed to open stream: No such file or directory E:\wamp\www\ERP\Index\Home\Common\function.php 第 156 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 159 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 160 行.
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0050s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`stock`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `stock` SET `total`=total-100 WHERE `id` = 1
+NOTIC: [2] fopen(/ERP/Public/Log/error_log2016-03-08): failed to open stream: No such file or directory E:\wamp\www\ERP\Index\Home\Common\function.php 第 156 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 159 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 160 行.
+
+[ 2016-03-08T14:05:23+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0050s ]
+SQL: INSERT INTO `clothesdetail` (`name`,`code`,`size`,`price`,`total`,`remark`) VALUES ('2','2','2','2','-100','') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0040s ]
+SQL: INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES ('32','51') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0020s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`clothes`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `clothes` SET `total`=total-100 WHERE `id` = 51
+NOTIC: [2] fopen(/ERP/Public/Log/2016-03-08error_log): failed to open stream: No such file or directory E:\wamp\www\ERP\Index\Home\Common\function.php 第 156 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 159 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 160 行.
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0040s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`stock`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `stock` SET `total`=total-100 WHERE `id` = 1
+NOTIC: [2] fopen(/ERP/Public/Log/2016-03-08error_log): failed to open stream: No such file or directory E:\wamp\www\ERP\Index\Home\Common\function.php 第 156 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 159 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 160 行.
+
+[ 2016-03-08T14:06:25+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0430s ]
+SQL: INSERT INTO `clothesdetail` (`name`,`code`,`size`,`price`,`total`,`remark`) VALUES ('2','2','2','2','-100','') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0040s ]
+SQL: INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES ('33','51') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 33 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`clothes`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `clothes` SET `total`=total-100 WHERE `id` = 51
+NOTIC: [2] fopen(/ERP/Public/Log/2016-03-08error_log): failed to open stream: No such file or directory E:\wamp\www\ERP\Index\Home\Common\function.php 第 156 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 159 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 160 行.
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0040s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`stock`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `stock` SET `total`=total-100 WHERE `id` = 1
+NOTIC: [2] fopen(/ERP/Public/Log/2016-03-08error_log): failed to open stream: No such file or directory E:\wamp\www\ERP\Index\Home\Common\function.php 第 156 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 159 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 160 行.
+
+[ 2016-03-08T14:07:32+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0050s ]
+SQL: INSERT INTO `clothesdetail` (`name`,`code`,`size`,`price`,`total`,`remark`) VALUES ('2','2','2','2','-100','') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0170s ]
+SQL: INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES ('34','51') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 34 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`clothes`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `clothes` SET `total`=total-100 WHERE `id` = 51
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0000s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`stock`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `stock` SET `total`=total-100 WHERE `id` = 1
+
+[ 2016-03-08T14:07:57+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0050s ]
+SQL: INSERT INTO `clothesdetail` (`name`,`code`,`size`,`price`,`total`,`remark`) VALUES ('2','2','2','2','-100','') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0040s ]
+SQL: INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES ('35','51') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 35 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`clothes`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `clothes` SET `total`=total-100 WHERE `id` = 51
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`stock`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `stock` SET `total`=total-100 WHERE `id` = 1
+
+[ 2016-03-08T14:10:37+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0080s ]
+SQL: INSERT INTO `clothesdetail` (`name`,`code`,`size`,`price`,`total`,`remark`) VALUES ('2','2','2','2','-100','') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0050s ]
+SQL: INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES ('36','51') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 36 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`clothes`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `clothes` SET `total`=total-100 WHERE `id` = 51
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`stock`.`total` - 100)'
+ [ SQL语句 ] : UPDATE `stock` SET `total`=total-100 WHERE `id` = 1
+
+[ 2016-03-08T14:11:05+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/51.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T14:11:17+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothesdetail` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0000s ]
+SQL: UPDATE `clothes` SET `total`=total+100 WHERE `id` = 51 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: UPDATE `stock` SET `total`=total+100 WHERE `id` = 1 [ RunTime:0.0830s ]
+SQL: DELETE FROM `clothes_detail` WHERE `detail_id` = 32 [ RunTime:0.0700s ]
+SQL: DELETE FROM `clothesdetail` WHERE `id` = 32 [ RunTime:0.0010s ]
+
+[ 2016-03-08T14:11:18+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/51.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2016-03-08T15:44:46+08:00 ] 127.0.0.1 /ERP/Home/Stock/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T15:44:47+08:00 ] 127.0.0.1 /ERP/Home/Stock/detail?id=51
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T15:45:11+08:00 ] 127.0.0.1 /ERP/Home/Stock/detail?id=51
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `clothes` WHERE `id` = 51 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 33 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T15:45:12+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/51.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T15:45:14+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 33 ORDER BY id desc  LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-08T15:45:20+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/edit.html?id=33
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothesdetail` WHERE `id` = 33 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 33 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: UPDATE `clothes` SET `total`=total+100 WHERE `id` = 51 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: UPDATE `stock` SET `total`=total+100 WHERE `id` = 1 [ RunTime:0.0940s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 33 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `clothes` SET `total`=total-11 WHERE `id` = 51 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `stock` SET `total`=total-11 WHERE `id` = 1 [ RunTime:0.0390s ]
+SQL: UPDATE `clothesdetail` SET `name`='2',`code`='2',`size`='2',`price`='2.00',`total`='-11',`remark`='' WHERE `id` = 33 [ RunTime:0.0000s ]
+
+[ 2016-03-08T15:45:20+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/51.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T15:45:45+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/edit.html?id=29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothesdetail` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 29 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0040s ]
+SQL: UPDATE `clothes` SET `total`=total-1 WHERE `id` = 51 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: UPDATE `stock` SET `total`=total-1 WHERE `id` = 1 [ RunTime:0.0930s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 29 LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`clothes`.`total` - 10000)'
+ [ SQL语句 ] : UPDATE `clothes` SET `total`=total-10000 WHERE `id` = 51
+NOTIC: [2] fopen(./Public/Log/Sql/2016-03-08.error_log): failed to open stream: No such file or directory E:\wamp\www\ERP\Index\Home\Common\function.php 第 156 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 159 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 160 行.
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`stock`.`total` - 10000)'
+ [ SQL语句 ] : UPDATE `stock` SET `total`=total-10000 WHERE `id` = 1
+NOTIC: [2] fopen(./Public/Log/Sql/2016-03-08.error_log): failed to open stream: No such file or directory E:\wamp\www\ERP\Index\Home\Common\function.php 第 156 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 159 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 160 行.
+SQL: UPDATE `clothesdetail` SET `name`='1',`code`='123',`size`='1',`price`='1.00',`total`='-10000',`remark`='' WHERE `id` = 29 [ RunTime:0.0010s ]
+
+[ 2016-03-08T15:45:46+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/edit.html?id=29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothesdetail` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 29 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: UPDATE `clothes` SET `total`=total+10000 WHERE `id` = 51 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0000s ]
+SQL: UPDATE `stock` SET `total`=total+10000 WHERE `id` = 1 [ RunTime:0.0560s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 29 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `clothes` SET `total`=total-10000 WHERE `id` = 51 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `stock` SET `total`=total-10000 WHERE `id` = 1 [ RunTime:0.0400s ]
+SQL: UPDATE `clothesdetail` SET `name`='1',`code`='123',`size`='1',`price`='1.00',`total`='-10000',`remark`='' WHERE `id` = 29 [ RunTime:0.0010s ]
+
+[ 2016-03-08T15:45:46+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/51.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2016-03-08T15:46:50+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/edit.html?id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothesdetail` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 28 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: UPDATE `clothes` SET `total`=total-1 WHERE `id` = 51 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: UPDATE `stock` SET `total`=total-1 WHERE `id` = 1 [ RunTime:0.1350s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 28 LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`clothes`.`total` - 100000)'
+ [ SQL语句 ] : UPDATE `clothes` SET `total`=total-100000 WHERE `id` = 51
+NOTIC: [2] fopen(./Public/Log/Sql/2016-03-08.error_log): failed to open stream: No such file or directory E:\wamp\www\ERP\Index\Home\Common\function.php 第 156 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 159 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 160 行.
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`erp`.`stock`.`total` - 100000)'
+ [ SQL语句 ] : UPDATE `stock` SET `total`=total-100000 WHERE `id` = 1
+NOTIC: [2] fopen(./Public/Log/Sql/2016-03-08.error_log): failed to open stream: No such file or directory E:\wamp\www\ERP\Index\Home\Common\function.php 第 156 行.
+NOTIC: [2] fwrite() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 159 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given E:\wamp\www\ERP\Index\Home\Common\function.php 第 160 行.
+SQL: UPDATE `clothesdetail` SET `name`='1',`code`='123',`size`='1',`price`='1.00',`total`='-100000',`remark`='' WHERE `id` = 28 [ RunTime:0.0000s ]
+
+[ 2016-03-08T15:56:20+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/edit.html?id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `clothesdetail` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 28 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: UPDATE `clothes` SET `total`=total+100000 WHERE `id` = 51 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: UPDATE `stock` SET `total`=total+100000 WHERE `id` = 1 [ RunTime:0.0860s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 28 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `clothes` SET `total`=total-100000 WHERE `id` = 51 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `stock` SET `total`=total-100000 WHERE `id` = 1 [ RunTime:0.0390s ]
+SQL: UPDATE `clothesdetail` SET `name`='1',`code`='123',`size`='1',`price`='1.00',`total`='-100000',`remark`='' WHERE `id` = 28 [ RunTime:0.0010s ]
+
+[ 2016-03-08T15:56:20+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/51.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T15:56:36+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothesdetail` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 28 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0000s ]
+SQL: UPDATE `clothes` SET `total`=total+100000 WHERE `id` = 51 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 51 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: UPDATE `stock` SET `total`=total+100000 WHERE `id` = 1 [ RunTime:0.1330s ]
+SQL: DELETE FROM `clothes_detail` WHERE `detail_id` = 28 [ RunTime:0.0010s ]
+SQL: DELETE FROM `clothesdetail` WHERE `id` = 28 [ RunTime:0.0010s ]
+
+[ 2016-03-08T15:56:36+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/51.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T15:56:58+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/51.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 51 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T16:00:23+08:00 ] 127.0.0.1 /ERP/Home/Stock/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 15 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T16:00:23+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/stock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock` LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stock` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-08T16:00:36+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: INSERT INTO `stock` (`type`,`remark`,`total`) VALUES ('测试一级仓库','测试','0') [ RunTime:0.1150s ]
+
+[ 2016-03-08T16:00:37+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/stock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stock` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-08T16:00:39+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/clothes.html?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `stock` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 23 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T16:00:40+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothes/stockId/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothes`  JOIN stock_clothes b on b.stock_id = 3 and b.clothes_id = clothes.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id,clothes.type,clothes.total,clothes.remark FROM `clothes`  JOIN stock_clothes b on b.stock_id = 3 and b.clothes_id = clothes.id  LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2016-03-08T16:00:41+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 3   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 8 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T16:00:42+08:00 ] 127.0.0.1 /ERP/Home/Index/systeminfo?_=1457424041781
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 11 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T16:00:44+08:00 ] 127.0.0.1 /ERP/Home/Stock/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 15 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T16:00:44+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/stock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock` LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stock` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-08T16:00:46+08:00 ] 127.0.0.1 /ERP/Home/Stock/clothes?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 23 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T16:00:46+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothes/stockId/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothes`  JOIN stock_clothes b on b.stock_id = 3 and b.clothes_id = clothes.id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id,clothes.type,clothes.total,clothes.remark FROM `clothes`  JOIN stock_clothes b on b.stock_id = 3 and b.clothes_id = clothes.id  LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2016-03-08T16:00:55+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: INSERT INTO `clothes` (`type`,`remark`,`total`) VALUES ('测试二级仓库','测试二级仓库','0') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0000s ]
+SQL: INSERT INTO `stock_clothes` (`clothes_id`,`stock_id`) VALUES ('52','3') [ RunTime:0.0010s ]
+
+[ 2016-03-08T16:00:55+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothes/stockId/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothes`  JOIN stock_clothes b on b.stock_id = 3 and b.clothes_id = clothes.id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id,clothes.type,clothes.total,clothes.remark FROM `clothes`  JOIN stock_clothes b on b.stock_id = 3 and b.clothes_id = clothes.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T16:00:57+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 3   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 8 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T16:00:57+08:00 ] 127.0.0.1 /ERP/Home/Index/systeminfo?_=1457424057254
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 11 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T16:00:59+08:00 ] 127.0.0.1 /ERP/Home/Stock/detail?id=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 33 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-08T16:01:00+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/52.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T16:01:10+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+ERR: 1366:Incorrect decimal value: '测试三级仓库' for column 'price' at row 1
+ [ SQL语句 ] : INSERT INTO `clothesdetail` (`name`,`code`,`size`,`price`,`total`,`remark`) VALUES ('测试三级仓库','测试三级仓库','0','测试三级仓库','0','')
+NOTIC: [8] Undefined index: id E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php 第 138 行.
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0010s ]
+ERR: 1048:Column 'detail_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES (NULL,'52')
+ERR: 1048:Column 'detail_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES (NULL,'52')
+
+[ 2016-03-08T16:03:01+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+ERR: 1366:Incorrect decimal value: '测试三级仓库' for column 'price' at row 1
+ [ SQL语句 ] : INSERT INTO `clothesdetail` (`name`,`code`,`size`,`price`,`total`,`remark`) VALUES ('测试三级仓库','测试三级仓库','0','测试三级仓库','0','')
+NOTIC: [8] Undefined index: id E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php 第 138 行.
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0000s ]
+ERR: 1048:Column 'detail_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES (NULL,'52')
+ERR: 1048:Column 'detail_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES (NULL,'52')
+
+[ 2016-03-08T16:03:28+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+ERR: 1366:Incorrect decimal value: '测试三级仓库' for column 'price' at row 1
+ [ SQL语句 ] : INSERT INTO `clothesdetail` (`name`,`code`,`size`,`price`,`total`,`remark`) VALUES ('测试三级仓库','测试三级仓库','0','测试三级仓库','0','')
+NOTIC: [8] Undefined index: id E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php 第 138 行.
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0000s ]
+ERR: 1048:Column 'detail_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES (NULL,'52')
+ERR: 1048:Column 'detail_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES (NULL,'52')
+
+[ 2016-03-08T16:17:37+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 3   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 8 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T16:17:38+08:00 ] 127.0.0.1 /ERP/Home/Index/systeminfo?_=1457425057465
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 11 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-08T16:17:40+08:00 ] 127.0.0.1 /ERP/Home/Stock/detail?id=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T16:48:56+08:00 ] 127.0.0.1 /ERP/Home/Stock/detail?id=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 46 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T16:48:57+08:00 ] 127.0.0.1 /ERP/Home/Stock/clothes?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `stock` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 31 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T16:48:58+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothes/stockId/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothes`  JOIN stock_clothes b on b.stock_id = 3 and b.clothes_id = clothes.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id,clothes.type,clothes.total,clothes.remark FROM `clothes`  JOIN stock_clothes b on b.stock_id = 3 and b.clothes_id = clothes.id  LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2016-03-08T16:49:29+08:00 ] 127.0.0.1 /ERP/Home/Stock/detail?id=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 46 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-03-08T16:49:30+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/52.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T16:50:01+08:00 ] 127.0.0.1 /ERP/Home/Stock/detail?id=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 46 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T16:50:02+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/52.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0050s ]
+
+[ 2016-03-08T16:51:04+08:00 ] 127.0.0.1 /ERP/Home/Stock/detail?id=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 52 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 46 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T16:51:05+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/52.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T16:52:10+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: INSERT INTO `clothesdetail` (`name`,`code`,`size`,`price`,`total`,`remark`) VALUES ('1','猜猜我是谁','1','1','1','') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0010s ]
+SQL: INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES ('37','52') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 37 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: UPDATE `clothes` SET `total`=total+1 WHERE `id` = 52 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 52 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0000s ]
+SQL: UPDATE `stock` SET `total`=total+1 WHERE `id` = 3 [ RunTime:0.1200s ]
+
+[ 2016-03-08T16:52:10+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/52.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T16:52:14+08:00 ] 127.0.0.1 /ERP/Home/Stock/clothes?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 31 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T16:52:15+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothes/stockId/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothes`  JOIN stock_clothes b on b.stock_id = 3 and b.clothes_id = clothes.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id,clothes.type,clothes.total,clothes.remark FROM `clothes`  JOIN stock_clothes b on b.stock_id = 3 and b.clothes_id = clothes.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T16:52:15+08:00 ] 127.0.0.1 /ERP/Home/Stock/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 22 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T16:52:16+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/stock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stock` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-08T16:52:19+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/del.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `clothesdetail` WHERE `id` = 37 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 37 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: UPDATE `clothes` SET `total`=total-1 WHERE `id` = 52 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 52 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: UPDATE `stock` SET `total`=total-1 WHERE `id` = 3 [ RunTime:0.0680s ]
+SQL: DELETE FROM `clothes_detail` WHERE `detail_id` = 37 [ RunTime:0.0010s ]
+SQL: DELETE FROM `clothesdetail` WHERE `id` = 37 [ RunTime:0.0000s ]
+
+[ 2016-03-08T16:52:52+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/52.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-03-08T16:52:53+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothes/stockId/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothes`  JOIN stock_clothes b on b.stock_id = 3 and b.clothes_id = clothes.id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id,clothes.type,clothes.total,clothes.remark FROM `clothes`  JOIN stock_clothes b on b.stock_id = 3 and b.clothes_id = clothes.id  LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2016-03-08T16:52:55+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/stock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `stock` LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stock` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-08T16:53:58+08:00 ] 127.0.0.1 /ERP/Home/Sale/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T16:54:19+08:00 ] 127.0.0.1 /ERP/Home/Sale/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T16:54:32+08:00 ] 127.0.0.1 /ERP/Home/Sale/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 7 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\aa36a5ba773dc479a2de055fe3de30fe.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T16:54:33+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `clothesdetail` WHERE `total` > 0 LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail` WHERE `total` > 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-08T16:54:34+08:00 ] 127.0.0.1 /ERP/Home/Sale/record
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\c06a0b8398a0362d2bd4e04c9ccfea55.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T16:54:35+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,10   [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-08T20:21:15+08:00 ] 127.0.0.1 /ERP/Home/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\UserController.class.php on line 14 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T20:21:16+08:00 ] 127.0.0.1 /ERP/index.php/Home/User/getData/table/user.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.1060s ]
+SQL: SELECT user.id as id,user.name as name,user.logindate as logindate,user.loginip as loginip,user.status as status,user.account as account,user.pwd as pwd,r.id as role_id,r.title as role FROM `user` LEFT JOIN auth_group_access ru on ru.uid =user.id  LEFT JOIN auth_group r on r.id = ru.group_id  LIMIT 0,10   [ RunTime:0.0700s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0100s ]
+
+[ 2016-03-08T20:21:17+08:00 ] 127.0.0.1 /ERP/Home/User/role
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\UserController.class.php on line 20 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.142008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.143008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T20:21:17+08:00 ] 127.0.0.1 /ERP/index.php/Home/User/getData/table/auth_group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `auth_group` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `auth_group` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `auth_group` LIMIT 1   [ RunTime:0.0040s ]
+
+[ 2016-03-08T20:21:18+08:00 ] 127.0.0.1 /ERP/Home/Rbac/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `auth_rule` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`name`,`title`,`pid` FROM `auth_rule`  [ RunTime:0.0210s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\RbacController.class.php on line 12 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.280016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.281017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T20:56:06+08:00 ] 127.0.0.1 /ERP/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0140s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 3   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 8 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T20:56:07+08:00 ] 127.0.0.1 /ERP/Home/Index/systeminfo?_=1457441766623
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 11 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T20:56:49+08:00 ] 127.0.0.1 /ERP/Home/Stock/detail?id=52
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0620s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 52 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `clothes` WHERE `id` = 52 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 46 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-03-08T20:56:50+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/52.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0140s ]
+
+[ 2016-03-08T20:56:58+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0260s ]
+SQL: INSERT INTO `clothesdetail` (`name`,`code`,`size`,`price`,`total`,`remark`) VALUES ('1','1','1','1','1','') [ RunTime:0.2120s ]
+SQL: SHOW COLUMNS FROM `clothes_detail` [ RunTime:0.0010s ]
+SQL: INSERT INTO `clothes_detail` (`detail_id`,`clothes_id`) VALUES ('38','52') [ RunTime:0.0410s ]
+SQL: SELECT * FROM `clothes_detail` WHERE `detail_id` = 38 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0000s ]
+SQL: UPDATE `clothes` SET `total`=total+1 WHERE `id` = 52 [ RunTime:0.1260s ]
+SQL: SHOW COLUMNS FROM `stock_clothes` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `stock_clothes` WHERE `clothes_id` = 52 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: UPDATE `stock` SET `total`=total+1 WHERE `id` = 3 [ RunTime:0.2740s ]
+
+[ 2016-03-08T20:56:58+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothesdetail/clothesId/52.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT clothesdetail.id,clothesdetail.name,clothesdetail.total,clothesdetail.code,clothesdetail.size,clothesdetail.price,clothesdetail.remark FROM `clothesdetail`  JOIN clothes_detail b on b.clothes_id = 52 and b.detail_id = clothesdetail.id  LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2016-03-08T20:57:00+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 38 ORDER BY id desc  LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-08T20:57:07+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: detail_img E:\wamp\www\ERP\Index\Home\Controller\ImgController.class.php 第 15 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T20:57:13+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 38 ORDER BY id desc  LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-08T20:57:21+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: detail_img E:\wamp\www\ERP\Index\Home\Controller\ImgController.class.php 第 15 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-08T20:58:09+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 38 ORDER BY id desc  LIMIT 1   [ RunTime:0.0140s ]
+
+[ 2016-03-08T20:58:13+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-03-08T20:58:29+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/search.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `detail_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `detail_img` WHERE `detail_id` = 38 ORDER BY id desc  LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-08T20:58:32+08:00 ] 127.0.0.1 /ERP/index.php/Home/Img/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,536 @@
+<!-- <html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/EasyUi/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/EasyUi/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/EasyUi/demo.css">
+    <script type="text/javascript" src="__PUBLIC__/EasyUi/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/EasyUi/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/EasyUi/jquery.easyui.min.js"></script>
+    <script>
+        function del(){
+            var row = $('#tg').treegrid('getSelected');
+            if(row){
+                    $.messager.confirm('提示','确认删除这条数据吗？',function(r){
+                        if(r){
+                            $.ajax({
+                                method:'post',
+                                url:"{:U('Rbac/del')}",
+                                data:{"id":row.id,"table":'auth_rule'},
+                                success:function(res){
+                                    if(res.status == 1){
+                                        $.messager.alert('成功！','删除成功！');
+                                        $('#tg').treegrid('reload');
+                                    }else{
+                                        $.messager.show({
+                                            title:'错误',
+                                            msg:res.info,
+                                        });
+                                    }
+                                }
+                            });
+                        }else{
+                            $.messager.alert("提示","已取消操作");
+                        }
+                    });
+            }else{
+                $.messager.alert("提示！","请选中要删除的选项","error");
+            }
+        }
+        function edit(){
+            var row = $('#tg').treegrid('getSelected');
+            if(row){
+                $('#dlg').dialog('open').dialog('setTitle','编辑');
+                $('#fm').form('load',row);
+            }else{
+                $.messager.alert("提示！","请选中要编辑的选项","error");
+            }
+        }
+        function add(){
+            $('#list').hide();
+            $('#parent').html('');
+            $('#level').val('1');
+            $('#status').val('1');
+            $('#name').val('');
+            $('#title').val('');
+            $('#node-dlg').dialog('open').dialog('setTitle','编辑');
+        }
+        function checkLevel(level){
+            var num = parseInt(level.value);
+            $('#list').hide();
+            if(num != 1){
+                $.ajax({
+                    method:'post',
+                    data:{'level':num},
+                    url:"{:U('Public/getNode')}",
+                    success:function(data){
+                        $('#parent').html('');
+                        for(var i in data){
+                            //alert(data[i].name);
+                            var html = "<option value = '"+data[i].id+"'>"+data[i].title+"</option>";
+                            $('#parent').append(html);
+                        }
+                        $('#list').show();
+                    }
+                });
+            }
+        }
+        function save(){
+            var level = $('#level').val();
+            var data = {
+                'level':$('#level').val(),
+                'name':$('#name').val(),
+                'title':$('#title').val(),
+                'status':$('#status').val(),
+                'pid':$('#parent').val(),
+            }
+            $.ajax({
+                method:'post',
+                data:{'data':data},
+                url:"{:U('Rbac/add')}",
+                success:function(res){
+                    if(res.status == 1){
+                        $('#node-dlg').dialog('close');    
+                        $.messager.alert('提示',res.info);
+                        $('#tg').treegrid('reload');
+                    }else{
+                        $.messager.show({
+                            title:'错误',
+                            msg:res.info,
+                        });
+                    }
+                }
+            });
+
+        }
+    </script>
+</head>
+    <body>
+        <table id = "tg"  title= "权限节点管理" class="easyui-treegrid" toolbar = "#tb"
+            data-options="idField: 'id',treeField: 'title',lines: true, " url = "{:U('Rbac/getData')}">
+            <thead>
+                <tr>
+                    <th data-options="field:'title'" width="20%">title</th>
+                    <th data-options="field:'name'" width="20%">Name</th>
+                    <th data-options="field:'pid'" width="20%" align="right">pid</th>
+                   <th data-options="field:'id'" width="20%" align="right">id</th>
+                   <th data-options="field:'level'" width="20%" align="right">level</th>
+                </tr>
+            </thead>
+        </table>
+        <div id="tb">
+            <a href="#" class="easyui-linkbutton" iconCls="icon-del" plain="true" onclick="del()">删除</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="edit()">编辑</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="add()">新增</a>
+        </div>
+
+
+        <div id="dlg" class="easyui-dialog" style="width:30%;height:150px;position:relative;top:30%;
+            z-index:100" closed="true" buttons="#dlg-buttons">
+            <form id="fm" method="post">
+                <div class="fitem">
+                    <label>备注:</label>
+                    <input id = "remark" name="remark" class="easyui-validatebox" required = "true" >
+                </div>
+            </form>
+        </div>
+        <div id="dlg-buttons">
+            <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="save()">保存</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')">取消</a>
+        </div>
+
+
+        <div id="node-dlg" class="easyui-dialog" style="width:30%;height:300px;position:relative;top:30%;
+            z-index:100" closed="true" buttons="#node-dlg-buttons">
+            <form id="fm" method="post">
+                <div class="fitem">
+                    <label>创建:</label>
+                    <select id = "level" onchange = "checkLevel(this)" >
+                        <option value = '1' selected = "true">应用</option>
+                        <option value = '2'>控制器</option>
+                        <option value = '3'>方法</option>
+                    </select>
+                </div>
+                &nbsp
+                <div  id = "list" hidden = "true" class="fitem">
+                    <label>所属目录:</label>
+                    <select id = "parent" >
+                    </select>
+                </div>
+                &nbsp
+                <div class="fitem">
+                    <label>名称:</label>
+                    <input id = "name" name="name" class="easyui-validatebox" required="true">
+                </div>
+                &nbsp
+                <div class="fitem">
+                    <label>描述:</label>
+                    <input id = "title" name="title" class="easyui-validatebox" required="true" >
+                </div>
+                &nbsp
+                <div class="fitem">
+                    <label>是否开启:</label>
+                    <select id = "status" required="true">
+                      <option value ="1" selected = "true" >开启</option>
+                      <option value ="0">关闭</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+         <div id="node-dlg-buttons">
+            <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="save()">保存</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#node-dlg').dialog('close')">取消</a>
+        </div>
+    </body>
+</html>
+
+<html>
+<head>
+    <title>节点管理</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/EasyUi/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/EasyUi/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/EasyUi/demo.css">
+    <script type="text/javascript" src="__PUBLIC__/EasyUi/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/EasyUi/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/EasyUi/jquery.easyui.min.js"></script>
+    <script>
+        var pid,level,pidName;
+        function add(pid,level,pidName){
+            this.pid = pid;
+            this.level = level;
+            this.pidName = pidName;
+            $('#dlg').dialog('open').dialog('setTitle','新增');
+            $('#fm').form('clear');
+        }
+        function save(){
+            var name = this.pidName;
+            if(this.pid == 0) name = $('#name').val();
+            else name = pidName+"/"+$('#name').val();
+            var data = {
+                'pid':this.pid,
+                'level':this.level,
+                'name':name,
+                'title':$('#title').val(),
+                'status':$('#status').val(),
+            }
+            $.ajax({
+                method:'post',
+                data:{'data':data,'table':'auth_rule'},
+                url:"{:U('Rbac/add')}",
+                success:function(res){
+                    if(res.info != '') res.msg = res.info;
+                    if(res.status == 1){
+                        window.location.reload();
+                    }else{
+                        $.messager.alert('提示',res.msg,'error');
+                    }
+                }
+            });
+        }
+        function del(id){
+            $.ajax({
+                method:'post',
+                data:{'id':id,'table':'auth_rule'},
+                url:"{:U('Rbac/del')}",
+                success:function(res){
+                    if(res.info != '') res.msg = res.info;
+                    if(res.status == 1){
+                        window.location.reload();
+                    }else{
+                        $.messager.alert('提示',res.msg,'error');
+                    }
+                }
+            });
+        }
+    </script>
+<style>
+    .app{
+        width:94%;
+        height:auto;
+        overflow:hidden;
+        margin:20px auto;
+        padding:10px 20px;
+        border:#ccc solid 1px;
+    }
+    .app dl{
+        margin:10px 0;
+        border:#ccc solid 1px;
+        height:auto;
+        overflow:hidden;
+    }
+    .app dl dt{
+        display:blick;
+        height:36px;
+        line-height:36px;
+        background:#e6e6e6;
+        text-index:10px;
+        padding:0 10px;
+    }
+    .app dl dd{
+        float:left;
+        margin:0 10px;
+        padding:10px 15px;
+    }
+</style>
+</head>
+<body>
+         <div class="table-responsive">
+         <a href="#" class="btn btn-primary" onclick = "add(0,1,'')">添加应用</a>
+         <foreach name="node" item="app">
+            <div class="app">
+                <p>{$app.title} <a href = "#" class="btn btn-info btn-xs" id = "{$app['id']}" name = "{$app['name']}" onclick = "add({$app['id']},2,'{$app['name']}')">添加控制器</a></p>
+                <foreach name="app.children" item="action">
+                    <dl>
+                        <dt style="color:#f00;">
+                            {$action.title}
+                            <a href = "#" class="btn btn-info btn-xs" onclick = "add({$action['id']},3,'{$action['name']}')">添加方法</a>
+                            <a href = "#" class="btn btn-danger btn-xs" onclick = "del({$action['id']})">删除</a>
+                            </dt>
+                            <foreach name="action.children" item="method">
+                                <dd>
+                                <span>{$method.title}</span>
+                                 <a href="#" class="btn btn-danger btn-xs" onclick = "del({$method['id']})" >删除</a>
+                                </dd>
+                            </foreach>
+                        </dl>
+                    </foreach>
+                </div>
+            </foreach>
+         </div>
+         <div id="dlg" class="easyui-dialog" style="width:30%;height:200px;position:relative;top:30%;
+            z-index:100"closed="true" buttons="#dlg-buttons">
+            <form id="fm" method="post">
+                <div class="fitem">
+                    <label>名称:</label>
+                    <input id = "name" name="name" class="easyui-validatebox" required="true">
+                </div>
+                &nbsp
+                <div class="fitem">
+                    <label>描述:</label>
+                    <input id = "title" name="title" class="easyui-validatebox" >
+                </div>
+                <div class="fitem">
+                    <label>是否开启:</label>
+                    <select id = "status" required="true">
+                      <option value ="1">开启</option>
+                      <option value ="0">关闭</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div id="dlg-buttons">
+            <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="save()">保存</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')">取消</a>
+        </div> 
+ </body>
+ </html> -->
+ <html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/EasyUi/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/EasyUi/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/EasyUi/demo.css">
+    <script type="text/javascript" src="__PUBLIC__/EasyUi/jquery.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/EasyUi/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/EasyUi/jquery.easyui.min.js"></script>
+    <script>
+        var url;
+        function del(){
+            var row = $('#tg').treegrid('getSelected');
+            if(row){
+                    $.messager.confirm('提示','确认删除这条数据吗？',function(r){
+                        if(r){
+                            $.ajax({
+                                method:'post',
+                                url:"{:U('Rbac/del')}",
+                                data:{"id":row.id,"table":'auth_rule'},
+                                success:function(res){
+                                    if(res.status == 1){
+                                        $.messager.alert('成功！','删除成功！');
+                                        $('#tg').treegrid('reload');
+                                    }else{
+                                        $.messager.show({
+                                            title:'错误',
+                                            msg:res.info,
+                                        });
+                                    }
+                                }
+                            });
+                        }else{
+                            $.messager.alert("提示","已取消操作");
+                        }
+                    });
+            }else{
+                $.messager.alert("提示！","请选中要删除的选项","error");
+            }
+        }
+        function edit(){
+            var row = $('#tg').treegrid('getSelected');
+            if(row){
+                $('#dlg').dialog('open').dialog('setTitle','编辑');
+                $('#remark').val(row.title);
+                url = "{:U('Rbac/edit')}?id="+row.id;
+            }else{
+                $.messager.alert("提示！","请选中要编辑的选项","error");
+            }
+        }
+        function add(){
+            $('#list').hide();
+            $('#parent').html('');
+            $('#level').val('1');
+            $('#status').val('1');
+            $('#name').val('');
+            $('#title').val('');
+            $('#node-dlg').dialog('open').dialog('setTitle','编辑');
+        }
+        function checkLevel(level){
+            var num = parseInt(level.value);
+            $('#list').hide();
+            if(num != 1){
+                $.ajax({
+                    method:'post',
+                    data:{'level':num},
+                    url:"{:U('Public/getNode')}",
+                    success:function(data){
+                        $('#parent').html('');
+                        for(var i in data){
+                            //alert(data[i].name);
+                            var html = "<option value = '"+data[i].id+"'>"+data[i].title+"</option>";
+                            $('#parent').append(html);
+                        }
+                        $('#list').show();
+                    }
+                });
+            }
+        }
+        function saveEdit(){
+            console.log($('#remark').val());
+            var data = {
+                'title':$('#remark').val(),
+            }
+            $.ajax({
+                method:'post',
+                data:{'data':data},
+                url:url,
+                success:function(res){
+                    if(res.status == 1){
+                        $('#dlg').dialog('close');    
+                        $.messager.alert('提示',res.info);
+                        $('#tg').treegrid('reload');
+                    }else{
+                        $.messager.show({
+                            title:'错误',
+                            msg:res.info,
+                        });
+                    }
+                }
+            });
+        }
+        function save(){
+            var level = $('#level').val();
+            var data = {
+                'level':$('#level').val(),
+                'name':$('#name').val(),
+                'title':$('#title').val(),
+                'status':$('#status').val(),
+                'pid':$('#parent').val(),
+            }
+            $.ajax({
+                method:'post',
+                data:{'data':data},
+                url:"{:U('Rbac/add')}",
+                success:function(res){
+                    if(res.status == 1){
+                        $('#node-dlg').dialog('close');    
+                        $.messager.alert('提示',res.info);
+                        $('#tg').treegrid('reload');
+                    }else{
+                        $.messager.show({
+                            title:'错误',
+                            msg:res.info,
+                        });
+                    }
+                }
+            });
+
+        }
+    </script>
+</head>
+    <body>
+        <table id = "tg"  title= "权限节点管理" class="easyui-treegrid" toolbar = "#tb"
+            data-options="idField:'id',treeField:'title',lines:true,rownumbers:true,animate:true,checkbox:true"  url = "{:U('Rbac/getData')}">
+            <thead>
+                <tr>
+                    <th data-options="field:'title'" width="20%">title</th>
+                    <th data-options="field:'name'" width="20%">Name</th>
+                    <th data-options="field:'pid'" width="20%" align="right">pid</th>
+                   <th data-options="field:'id'" width="20%" align="right">id</th>
+                   <th data-options="field:'level'" width="10%" align="right">level</th>
+                </tr>
+            </thead>
+        </table>
+        <div id="tb">
+            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="del()">删除</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="edit()">编辑</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="add()">新增</a>
+        </div>
+
+
+        <div id="dlg" class="easyui-dialog" style="width:30%;height:150px;position:relative;top:30%;
+            z-index:100" closed="true" buttons="#dlg-buttons">
+            <form id="fm" method="post">
+                <div class="fitem">
+                    <label>备注:</label>
+                    <input id = "remark" name="remark" class="easyui-validatebox" required = "true" >
+                </div>
+            </form>
+        </div>
+        <div id="dlg-buttons">
+            <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="saveEdit()">保存</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')">取消</a>
+        </div>
+
+
+        <div id="node-dlg" class="easyui-dialog" style="width:30%;height:300px;position:relative;top:30%;
+            z-index:100" closed="true" buttons="#node-dlg-buttons">
+            <form id="fm" method="post">
+                <div class="fitem">
+                    <label>创建:</label>
+                    <select id = "level" onchange = "checkLevel(this)" >
+                        <option value = '1' selected = "true">应用</option>
+                        <option value = '2'>控制器</option>
+                        <option value = '3'>方法</option>
+                    </select>
+                </div>
+                &nbsp
+                <div  id = "list" hidden = "true" class="fitem">
+                    <label>所属目录:</label>
+                    <select id = "parent" >
+                    </select>
+                </div>
+                &nbsp
+                <div class="fitem">
+                    <label>名称:</label>
+                    <input id = "name" name="name" class="easyui-validatebox" required="true">
+                </div>
+                &nbsp
+                <div class="fitem">
+                    <label>描述:</label>
+                    <input id = "title" name="title" class="easyui-validatebox" required="true" >
+                </div>
+                &nbsp
+                <div class="fitem">
+                    <label>是否开启:</label>
+                    <select id = "status" required="true">
+                      <option value ="1" selected = "true" >开启</option>
+                      <option value ="0">关闭</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+         <div id="node-dlg-buttons">
+            <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="save()">保存</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#node-dlg').dialog('close')">取消</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1990 @@
+[ 2016-04-05T22:08:46+08:00 ] 127.0.0.1 /ERP/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.053003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021001s ]
+
+[ 2016-04-05T22:08:47+08:00 ] 127.0.0.1 /ERP/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\LoginController.class.php on line 15 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.012000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.013000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.276016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.277016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.037002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.037002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019001s ]
+
+[ 2016-04-05T22:08:48+08:00 ] 127.0.0.1 /ERP/index.php/Home/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-04-05T22:08:59+08:00 ] 127.0.0.1 /ERP/index.php/Home/Login/checkData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.1210s ]
+SQL: SELECT * FROM `user` WHERE `account` = 'admin' AND `pwd` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `auth_group_access` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `auth_group_access` WHERE `uid` = 20 LIMIT 1   [ RunTime:0.0180s ]
+
+[ 2016-04-05T22:08:59+08:00 ] 127.0.0.1 /ERP/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:08:59+08:00 ] 127.0.0.1 /ERP/index.php/Home/Login/verify.html?id0.4375948181750201
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:09:01+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.4710s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.5570s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 4   [ RunTime:1.0031s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 5   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 7   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 13 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.503028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.503028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-05T22:09:03+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/systeminfo.html?_=1459865342345
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-05T22:13:32+08:00 ] 127.0.0.1 /ERP/index.php/Home/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\UserController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:13:33+08:00 ] 127.0.0.1 /ERP/index.php/Home/User/getUserList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0060s ]
+SQL: SELECT user.id as id,user.name as name,user.logindate as logindate,user.loginip as loginip,user.status as status,user.account as account,user.pwd as pwd,r.id as role_id,r.title as role FROM `user` LEFT JOIN auth_group_access ru on ru.uid =user.id  LEFT JOIN auth_group r on r.id = ru.group_id  LIMIT 0,10   [ RunTime:0.1490s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0700s ]
+
+[ 2016-04-05T22:13:35+08:00 ] 127.0.0.1 /ERP/index.php/Home/User/getUserList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT user.id as id,user.name as name,user.logindate as logindate,user.loginip as loginip,user.status as status,user.account as account,user.pwd as pwd,r.id as role_id,r.title as role FROM `user` LEFT JOIN auth_group_access ru on ru.uid =user.id  LEFT JOIN auth_group r on r.id = ru.group_id  LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-05T22:13:36+08:00 ] 127.0.0.1 /ERP/index.php/Home/Public/getAllRole.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `auth_group` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `auth_group`  [ RunTime:0.0000s ]
+
+[ 2016-04-05T22:13:41+08:00 ] 127.0.0.1 /ERP/index.php/Home/User/setRole.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `auth_group_access` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `auth_group_access` WHERE ( 40 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Illegal offset type in isset or empty E:\wamp\www\ERP\ThinkPHP\Library\Think\Model.class.php 第 511 行.
+SQL: DELETE FROM `auth_group_access` WHERE `uid` = 40 [ RunTime:0.2600s ]
+SQL: INSERT INTO `auth_group_access` (`uid`,`group_id`) VALUES ('40','20') [ RunTime:0.0440s ]
+
+[ 2016-04-05T22:13:41+08:00 ] 127.0.0.1 /ERP/index.php/Home/User/getUserList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0010s ]
+SQL: SELECT user.id as id,user.name as name,user.logindate as logindate,user.loginip as loginip,user.status as status,user.account as account,user.pwd as pwd,r.id as role_id,r.title as role FROM `user` LEFT JOIN auth_group_access ru on ru.uid =user.id  LEFT JOIN auth_group r on r.id = ru.group_id  LIMIT 0,10   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-05T22:15:44+08:00 ] 127.0.0.1 /ERP/index.php/Home/User/role.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014001s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\UserController.class.php on line 21 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2016-04-05T22:15:45+08:00 ] 127.0.0.1 /ERP/index.php/Home/User/getRoleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `auth_group` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `auth_group` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `auth_group` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-05T22:15:57+08:00 ] 127.0.0.1 /ERP/index.php/Home/Rbac/node.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `auth_rule` [ RunTime:0.0620s ]
+SQL: SELECT `id`,`name`,`title`,`pid` FROM `auth_rule`  [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\RbacController.class.php on line 18 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:15:58+08:00 ] 127.0.0.1 /ERP/index.php/Home/Rbac/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`level` FROM `auth_rule`  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `auth_rule` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-05T22:16:04+08:00 ] 127.0.0.1 /ERP/index.php/Home/User/getUserList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT user.id as id,user.name as name,user.logindate as logindate,user.loginip as loginip,user.status as status,user.account as account,user.pwd as pwd,r.id as role_id,r.title as role FROM `user` LEFT JOIN auth_group_access ru on ru.uid =user.id  LEFT JOIN auth_group r on r.id = ru.group_id  LIMIT 0,10   [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-05T22:19:35+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 48 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-04-05T22:19:35+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `stock_record` [ RunTime:0.0410s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stock_record` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `stock_record` LIMIT 0,10   [ RunTime:0.0100s ]
+
+[ 2016-04-05T22:19:35+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 15 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:19:36+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/stock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stock` LIMIT 1   [ RunTime:0.0220s ]
+
+[ 2016-04-05T22:19:37+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/clothes.html?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 24 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:19:38+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothes/stockId/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothes`  JOIN stock_clothes b on b.stock_id = 4 and b.clothes_id = clothes.id  LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT clothes.id,clothes.type,clothes.total,clothes.remark FROM `clothes`  JOIN stock_clothes b on b.stock_id = 4 and b.clothes_id = clothes.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-04-05T22:19:38+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/clothes.html?id=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 24 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:19:38+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothes/stockId/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothes`  JOIN stock_clothes b on b.stock_id = 5 and b.clothes_id = clothes.id  LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id,clothes.type,clothes.total,clothes.remark FROM `clothes`  JOIN stock_clothes b on b.stock_id = 5 and b.clothes_id = clothes.id  LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-04-05T22:19:38+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/clothes.html?id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 24 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:19:39+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/clothes/stockId/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothes`  JOIN stock_clothes b on b.stock_id = 7 and b.clothes_id = clothes.id  LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT clothes.id,clothes.type,clothes.total,clothes.remark FROM `clothes`  JOIN stock_clothes b on b.stock_id = 7 and b.clothes_id = clothes.id  LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2016-04-05T22:19:43+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 7 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\aa36a5ba773dc479a2de055fe3de30fe.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:19:44+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.1480s ]
+SQL: SELECT * FROM `clothesdetail` WHERE `total` > 0 LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail` WHERE `total` > 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-05T22:19:49+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 10 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\c06a0b8398a0362d2bd4e04c9ccfea55.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:19:50+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0550s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,10   [ RunTime:0.0220s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-05T22:19:57+08:00 ] 127.0.0.1 /ERP/index.php/Home/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\UserController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:19:58+08:00 ] 127.0.0.1 /ERP/index.php/Home/User/getUserList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0010s ]
+SQL: SELECT user.id as id,user.name as name,user.logindate as logindate,user.loginip as loginip,user.status as status,user.account as account,user.pwd as pwd,r.id as role_id,r.title as role FROM `user` LEFT JOIN auth_group_access ru on ru.uid =user.id  LEFT JOIN auth_group r on r.id = ru.group_id  LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-05T22:24:43+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 48 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:24:44+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock_record` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stock_record` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock_record` LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2016-04-05T22:24:48+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 15 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-05T22:24:49+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/stock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `stock` LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stock` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-05T22:24:53+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\StockController.class.php on line 15 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:24:53+08:00 ] 127.0.0.1 /ERP/index.php/Home/Stock/getData/table/stock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock` LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `stock` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-05T22:24:59+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 7 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\aa36a5ba773dc479a2de055fe3de30fe.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:25:00+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `clothesdetail` WHERE `total` > 0 LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail` WHERE `total` > 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-05T22:25:01+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 10 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\c06a0b8398a0362d2bd4e04c9ccfea55.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:25:01+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-05T22:27:32+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 7 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\aa36a5ba773dc479a2de055fe3de30fe.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:27:33+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `clothesdetail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `clothesdetail` WHERE `total` > 0 LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clothesdetail` WHERE `total` > 0 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-05T22:27:34+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 10 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\c06a0b8398a0362d2bd4e04c9ccfea55.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:27:35+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-05T22:58:27+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 4   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 5   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 7   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 13 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:58:28+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/systeminfo.html?_=1459868307451
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:58:30+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 10 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\c06a0b8398a0362d2bd4e04c9ccfea55.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-05T22:58:31+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-05T22:58:32+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/erxport.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `salerecord`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-05T22:59:09+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 4   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 5   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 7   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 13 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:59:10+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/systeminfo.html?_=1459868349596
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:59:11+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 10 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\c06a0b8398a0362d2bd4e04c9ccfea55.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T22:59:12+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-05T22:59:13+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/export.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `salerecord`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: filename E:\wamp\www\ERP\Index\Home\Common\function.php 第 188 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:00:12+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 4   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 5   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 7   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 13 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:00:13+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/systeminfo.html?_=1459868412540
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-05T23:00:13+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0020s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 4   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 5   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 7   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 13 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-04-05T23:00:14+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/systeminfo.html?_=1459868413958
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:00:17+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 10 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\c06a0b8398a0362d2bd4e04c9ccfea55.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-04-05T23:00:18+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-05T23:00:19+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/export.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `salerecord`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: total E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: filename E:\wamp\www\ERP\Index\Home\Common\function.php 第 188 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:01:43+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 4   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 5   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 7   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 13 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:01:45+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/systeminfo.html?_=1459868504095
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-05T23:01:46+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 10 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\c06a0b8398a0362d2bd4e04c9ccfea55.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-05T23:01:47+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-05T23:01:48+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/export.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `salerecord`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: filename E:\wamp\www\ERP\Index\Home\Common\function.php 第 188 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:02:41+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 4   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 5   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 7   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 13 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:02:42+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/systeminfo.html?_=1459868561933
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:02:45+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:02:57+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 4   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 5   [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 7   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 13 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:02:58+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/systeminfo.html?_=1459868577953
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:03:00+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 10 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\c06a0b8398a0362d2bd4e04c9ccfea55.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:03:01+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-05T23:03:02+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/export.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `salerecord`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: filename E:\wamp\www\ERP\Index\Home\Common\function.php 第 188 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:04:17+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,50   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-05T23:04:19+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,50   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-05T23:05:03+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 4   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 5   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 7   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 13 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:05:04+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/systeminfo.html?_=1459868703183
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:05:06+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 10 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\c06a0b8398a0362d2bd4e04c9ccfea55.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-04-05T23:05:07+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-05T23:05:07+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/export.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `salerecord`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: filename E:\wamp\www\ERP\Index\Home\Common\function.php 第 188 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:07:37+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 4   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 5   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 7   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 13 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:07:38+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/systeminfo.html?_=1459868857754
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-05T23:07:39+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 10 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\c06a0b8398a0362d2bd4e04c9ccfea55.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-05T23:07:40+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-05T23:07:41+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/export.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `salerecord`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 95 行.
+NOTIC: [8] Undefined variable: filename E:\wamp\www\ERP\Index\Home\Common\function.php 第 188 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:08:11+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `stock` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `stock`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `clothes` [ RunTime:0.0010s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 4   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 5   [ RunTime:0.0000s ]
+SQL: SELECT clothes.id as id,clothes.type as type FROM `clothes` join stock_clothes b on b.clothes_id = clothes.id and b.stock_id = 7   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 13 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:08:13+08:00 ] 127.0.0.1 /ERP/index.php/Home/Index/systeminfo.html?_=1459868892102
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\IndexController.class.php on line 16 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:08:15+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/record.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Think\Controller::show(), called in E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php on line 10 and defined E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 68 行.
+NOTIC: [8] Undefined variable: content E:\wamp\www\ERP\ThinkPHP\Library\Think\Controller.class.php 第 69 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: data E:\wamp\www\ERP\Index\Runtime\Cache\Home\c06a0b8398a0362d2bd4e04c9ccfea55.php 第 3 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-05T23:08:17+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/getRecord.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `salerecord` ORDER BY saledate desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `salerecord` LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-05T23:08:20+08:00 ] 127.0.0.1 /ERP/index.php/Home/Sale/export.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `salerecord` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `salerecord`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleDate E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: saleMan E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [8] Undefined index: orderNum E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php 第 96 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php:92) E:\wamp\www\ERP\Index\Home\Common\function.php 第 187 行.
+NOTIC: [8] Undefined variable: filename E:\wamp\www\ERP\Index\Home\Common\function.php 第 188 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php:92) E:\wamp\www\ERP\Index\Home\Common\function.php 第 188 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php:92) E:\wamp\www\ERP\Index\Home\Common\function.php 第 189 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php:92) E:\wamp\www\ERP\Index\Home\Common\function.php 第 190 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at E:\wamp\www\ERP\Index\Home\Controller\SaleController.class.php:92) E:\wamp\www\ERP\Index\Home\Common\function.php 第 191 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?><h1 align = 'center'>暂无权限,请联系管理员！</h1>

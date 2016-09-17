@@ -1,0 +1,183 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+<head>
+	<title><?php echo ($data['id']); ?>管理</title>
+	<link rel="stylesheet" type="text/css" href="/ERP/Public/EasyUi/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="/ERP/Public/EasyUi/themes/icon.css">
+  	<link rel="stylesheet" type="text/css" href="/ERP/Public/Css/user.css">
+  	 <link rel="stylesheet" type="text/css" href="/ERP/Public/Css/public.css">
+	<link rel="stylesheet" type="text/css" href="/ERP/Public/EasyUi/demo/demo.css">
+	<script type="text/javascript" src="/ERP/Public/EasyUi/jquery.min.js"></script>
+	<script type="text/javascript" src="/ERP/Public/EasyUi/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="/ERP/Public/EasyUi/locale/easyui-lang-zh_CN.js"></script>
+	<script>
+		function img(val,row){
+			return "<a href = '#' onclick  = 'editImg("+row.id+")'>点击查看</a>";
+		}
+		function detail(val,row){
+			var url = "<?php echo U('Stock/detail');?>?id="+row.id;
+			return '<a href = "'+url+'">点击查看</a>';
+		}
+		function editImg(rowId){
+			//alert(rowId);
+			$('#detail_id').val(rowId);
+			$.ajax({
+				method:'post',
+				url:"<?php echo U('Img/search');?>",
+				data:{'id':rowId,'table':'clothes_img'},
+				success:function(res){
+					if(res.status == 1){
+						$('#img_preview').attr('src',res.info);
+					}else{
+						$('#img_preview').attr('src','/ERP/Public/Images/noimage.gif');
+					}
+					$('#img-dlg').dialog('open').dialog('setTitle','图片查看');
+				}
+			});
+			//$('#img-dlg').dialog('open').dialog('setTitle','图片查看');
+		}
+		function saveImg(){
+			$('#img-fm').form('submit');
+			$('#img-dlg').dialog('close');
+			$.messager.alert('提示!','上传成功!','success');
+		}
+		function previewImg(){
+			var file = document.getElementById("clothes_img").files[0];
+			//alert(file.type);
+			var reader = new FileReader();  
+   			 //将文件以Data URL形式读入页面  
+		    reader.readAsDataURL(file);  
+		    reader.onload=function(e){   
+		        $('#img_preview').attr('src',this.result);
+		    }  
+		}
+
+
+		function add(){
+				$('#dlg').dialog('open').dialog('setTitle','新增');
+				$('#fm').form('clear');
+				url = "<?php echo U('Stock/add');?>";
+		}
+		function del(){
+			var row = $('#dg').datagrid('getSelected');
+			if(row){
+					$.messager.confirm('提示','确认删除这条数据吗？',function(r){
+						if(r){
+							$.ajax({
+								method:'post',
+								url:"<?php echo U('Stock/del');?>",
+								data:{"id":row.id,"table":'clothes'},
+								success:function(res){
+									if(res.status == 1){
+										$.messager.alert('成功！','删除成功！');
+										$('#dg').datagrid('reload');
+									}else{
+										$.messager.show({
+											title:'错误',
+											msg:res.info,
+										});
+									}
+								}
+							});
+						}else{
+							$.messager.alert("提示","已取消操作");
+						}
+					});
+			}else{
+				$.messager.alert("提示！","请选中要删除的选项","error");
+			}
+		}
+		function edit(){
+			var row = $('#dg').datagrid('getSelected');
+			if(row){
+				$('#dlg').dialog('open').dialog('setTitle','新增');
+				$('#fm').form('load',row);
+				url = "<?php echo U('Stock/edit');?>?id="+row.id;
+			}else{
+				$.messager.alert("提示！","请选中要编辑的选项","error");
+			}
+		}
+		function save(){
+			var data = {
+				'type':$.trim($('#type').val()),
+				'remark':$.trim($('#remark').val()),
+			}
+			if(data.type == ''){
+				$.messager.alert('警告!','存在空数据,请检查数据!','error');
+			}else{
+				$.ajax({
+					method:'post',
+					url:url,
+					data:{'data':data,'table':'clothes','stockId':$('#stockId').val()},
+					success:function(res){
+						if(res.status == 1){
+							$('#dlg').dialog('close');
+							$.messager.alert('提示',res.info);
+							$('#dg').datagrid('reload');
+						}else{
+							$.messager.show({
+								title:'错误',
+								msg:res.info,
+							});
+						}
+					}
+				});
+			}
+		}
+	</script>
+</head>	
+	<body>
+
+		<table id = 'dg' class = 'easyui-datagrid' title = '二级仓库管理' data-options = 'rownumbers:true,singleSelect:true,autoRowHeight:false,pagination:true'  url = "<?php echo U('Stock/getData',array('table'=>'clothes','stockId'=>$stockId));?>" toolbar = '#tb'>
+			<thead>    
+        		<tr> 
+            		<th style = "width:10%" data-options = "field:'type',center:'left',align:'center'">类型</th>
+            		<th style = "width:10%" data-options = "field:'total',center:'left',align:'center'">数量</th>
+            		<th style = "width:50%" data-options = "field:'remark',align:'left',align:'center'">备注</th>
+        			<th style = "width:14%" data-options = "field:'id',align:'left',align:'center'" formatter = "detail">查看详情</th>
+        			<th style = "width:14%" data-options = "field:'picture',align:'left',align:'center'" formatter = "img" >查看图片</th>
+        		</tr>
+    		</thead> 
+		</table>
+		<div id = 'tb'>
+			<a href = "#" class = "easyui-linkbutton" iconCls = "icon-add"  plain = "true" onclick = "add()">增加</a>
+			<a href = "#" class = "easyui-linkbutton" iconCls = "icon-cut"  plain = "true" onclick = "del()">删除</a>
+			<a href = "#" class = "easyui-linkbutton" iconCls = "icon-save" plain = "true" onclick = "edit()">编辑</a>
+		</div>
+		<div id = 'dlg' class = 'easyui-dialog' style = 'width:30%;height:150px;position:relative;top:30%;
+			z-index:100' closed = 'true' buttons = '#dlg-buttons'>
+	    	<form id = 'fm' method = 'post'>
+	    		<div class = 'fitem'>
+	    			<label>类型:</label>
+	    			<input id = "type" name="type" class="easyui-validatebox" required="true">
+	    		</div>
+	    		&nbsp
+	    		<div class = 'fitem'>
+	    			<label>备注:</label>
+	    			<input id = "remark" name="remark" class="easyui-validatebox" >
+	    		</div>
+	    	</form>
+	    </div>
+	    <input type = "text" id = "stockId" value = "<?php echo ($stockId); ?>"  style="display:none;">
+	    <div id = 'dlg-buttons'>
+	     	<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="save()">保存</a>
+	    	<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')">取消</a>
+	    </div>
+
+	     <div id = 'img-dlg' class = 'easyui-dialog' style = 'width:30%;height:300px;position:relative;top:30%;
+			z-index:100' closed = 'true' buttons = '#img-dlg-buttons'>
+			<form id = 'img-fm' method = 'post' enctype = 'multipart/form-data' action = "<?php echo U('Img/upload');?>">
+	    		<img id = "img_preview" src = "/ERP/Public/Images/noimage.gif" style = "width:100%;height:80%;"> 
+	    		<input type = 'text' hidden = 'true' id = 'detail_id' name = 'detail_id'>
+	    		<input type = 'file' name = 'clothes_img' id = 'clothes_img' onchange="previewImg()">
+	    		<input type = 'text' hidden = 'true' name = 'type' value = 'clothes_img'>
+	    	</form>
+	    </div>
+
+	    <div id = 'img-dlg-buttons'>
+	     	<a href = "#" class = "easyui-linkbutton" iconCls = "icon-ok" onclick = "saveImg()">保存</a>
+	    	<a href = "#" class = "easyui-linkbutton" iconCls = "icon-cancel" onclick = "javascript:$('#img-dlg').dialog('close')">取消</a>
+	    </div>
+
+	    <a href = "<?php echo U('Stock/index');?>" class = "easyui-linkbutton" iconCls = "icon-ok"> 返回上一级</a>
+	</body>
+</html>

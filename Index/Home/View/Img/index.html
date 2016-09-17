@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/EasyUi/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/EasyUi/themes/icon.css">
+  	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/user.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/EasyUi/demo/demo.css">
+	<script type="text/javascript" src="__PUBLIC__/EasyUi/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/EasyUi/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/EasyUi/locale/easyui-lang-zh_CN.js"></script>
+	<script type="text/javascript">
+		function submitForm(){
+			$('#ff').form('submit');
+		}
+		function clearForm(){
+			$('#ff').form('clear');
+		}
+	</script>
+</head>	
+<div class="easyui-panel" title="New Topic" style="width:400px">
+		<div style="padding:10px 60px 20px 60px">
+	    <form id="ff" method="post" action = "{:U('Img/upload')}" enctype="multipart/form-data">
+	    	<input type = "file" name = 'file'>
+	    </form>
+	    <div style="text-align:center;padding:5px">
+	    	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">Submit</a>
+	    	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()">Clear</a>
+	    </div>
+	    </div>
+	</div>
+</html>

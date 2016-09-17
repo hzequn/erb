@@ -1,0 +1,25 @@
+html,body{  
+    height:100%;  
+    margin:0 auto; 
+	font-size: 100%;
+} 
+ul,li{
+	list-style: none;
+}
+#west{
+	margin: 0 auto;
+}
+.function{
+	margin: 0 auto;
+	text-decoration: none;
+	background-color: black;
+}
+.function-list{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+}
+a{
+text-decoration:none;
+}
